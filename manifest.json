@@ -1,0 +1,16 @@
+{
+  "name": "Guardian From the Archives",
+  "description": "Warn about old news",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://www.theguardian.com/*"],
+      //"css": ["mystyles.css"],
+      "js": ["warn.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "*.png"
+  ],
+  "manifest_version": 2
+}
